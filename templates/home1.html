@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>IntraQ Software Technology | IT Company</title>
+    <link rel="shortcut icon" href="{% static 'img/intraq_icon.png' %}" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1YGWYDENS0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1YGWYDENS0');
+</script>
+
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <script href="{% static 'js/script1.js' %}"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/intraq-logo2_bgremove.png' %}" alt="IntraQ software technology" title="IntraQ software technology" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Added close button for mobile view -->
+               
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#internship">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="brand-name animate__animated animate__fadeInDown">
+                Intra<span>Q</span>
+            </h1>
+            <p class="h4 mb-3 animate__animated animate__fadeIn">Software Technology</p>
+            <p class="h5 mb-4 animate__animated animate__fadeIn">Turning Vision into Reality with Technology.</p>
+            <button class="custom-btn animate__animated animate__fadeInUp" onclick="scrollToServices()">Get Started</button>
+        </div>
+    </section>
+
+
+
+    <!-- here the About page has beren start -->
+    <section id="about" class="hero-section1">
+        <section class="about-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5 reveal">
+                        <h2 class="mb-4">Welcome to IntraQ Software Technology</h2>
+                        <p class="lead">A leading provider of innovative IT solutions designed to transform businesses for the digital age. We specialize in cutting-edge software development, cloud solutions, cybersecurity, AI-driven applications, and enterprise technology services.</p>
+
+
+                        <p class="lead">At IntraQ, we believe in innovation, quality, and reliability. Our team of highly skilled professionals is dedicated to delivering scalable and tailored solutions that empower businesses to achieve their goals efficiently. Whether you're a startup looking to build your first product or an enterprise aiming to optimize operations, we provide customized solutions that align with your vision. </p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">👥</div>
+                            <h4>Expert Team</h4>
+                            <p>A passionate group of developers, analysts, and IT strategists.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">⚙️</div>
+                            <h4>Customized Solutions</h4>
+                            <p>Tailored software and IT services to meet your specific needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">🚀</div>
+                            <h4>Cutting-Edge Technology</h4>
+                            <p>Leveraging AI, cloud computing, and automation to drive digital transformation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">🔧</div>
+                            <h4>Seamless Support</h4>
+                            <p>End-to-end assistance to ensure smooth business operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-8 mx-auto text-center reveal">
+                        <p class="lead mb-4">At IntraQ Software Technology, we are committed to empowering businesses with the right technology to stay ahead in a competitive market. Partner with us and experience the future of IT solutions.</p>
+                        <a href="mailto:info@intraqsofttech.com" class="custom-btn">Partner with Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Content -->
+    
+
+
+
+
+
+
+
+
+
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" style="margin-top:5% ;">Our Services</h2>
+        <div class="row g-4">
+            <!-- Web Design -->
+            <div class="col-12 col-md-4">
+                <div class="service-cards">
+                    <div class="service-icons">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Web Design</h3>
+                    <p>Create engaging and responsive website designs.</p>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="col-12 col-md-4">
+                <div class="service-cards">
+                    <div class="service-icons">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Web Development</h3>
+                    <p>Modern web applications built with cutting-edge technology.</p>
+                </div>
+            </div>
+
+            <!-- Mobile Development -->
+            <div class="col-12 col-md-4">
+                <div class="service-cards">
+                    <div class="service-icons">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Mobile Development</h3>
+                    <p>Create engaging mobile applications for iOS and Android.</p>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="col-12 col-md-4">
+                <div class="service-cards">
+                    <div class="service-icons">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Digital Marketing</h3>
+                    <p>Boost your online presence with effective digital marketing strategies.</p>
+                </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="col-12 col-md-4">
+                <div class="service-cards">
+                    <div class="service-icons">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Graphic Design</h3>
+                    <p>Master the art of creating beautiful and intuitive user interfaces.</p>
+                </div>
+            </div>
+
+            <!-- Web Hosting -->
+            <div class="col-12 col-md-4">
+                <div class="service-cards">
+                    <div class="service-icons">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Web Hosting</h3>
+                    <p>Reliable and secure hosting solutions for your websites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Internship Section -->
+<section id="internship" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" style="margin-top:5% ;">Join Our Internship Program</h2>
+        <div class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 box-border">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Full Stack Development</h4>
+                    <p>Build dynamic web apps with expertise in front-end and back-end technology.</p>
+                    <div class="duration">
+                        <i class="far fa-clock"></i> 15 Days - 6 Months
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile App Development</h4>
+                    <p>Edit raw footage into engaging videos with seamless effects and storytelling.</p>
+                    <div class="duration">
+                        <i class="far fa-clock"></i> 15 Days - 6 Months
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h4>Front End Development</h4>
+                    <p>Design responsive, user-friendly interfaces with modern front-end technology.</p>
+                    <div class="duration">
+                        <i class="far fa-clock"></i> 15 Days - 6 Months
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h4>Digital Marketing</h4>
+                    <p>Boost online presence and drive engagement with effective SEO, social media, and advertising strategies.</p>
+                    <div class="duration">
+                        <i class="far fa-clock"></i> 15 Days - 6 Months
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Graphic design</h4>
+                        <p>Create visually compelling designs that enhance brand identity and user experience.</p>
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            15 Days - 6 Months
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-object-group"></i>
+                        </div>
+                        <h4>UI/UX</h4>
+                        <p>Design intuitive and engaging user experiences with a focus on usability and aesthetics.</p>
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            15 Days - 6 Months
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Data Analyst</h4>
+                        <p>Analyze and interpret complex data to drive informed business decisions and strategies.</p>
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            15 Days - 6 Months
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Data Science</h4>
+                        <p>Leverage data, AI, and machine learning to uncover insights and drive intelligent decision-making.</p>
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            15 Days - 6 Months
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Machine Learning</h4>
+                    <p>Develop intelligent systems that learn and adapt using data-driven algorithms and AI models.</p>
+                    <div class="duration">
+                        <i class="far fa-clock"></i>
+                        15 Days - 6 Months
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>HR/BDE</h4>
+                        <p>Manage talent acquisition, employee engagement, and business growth strategies for organizational success.</p>
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            15 Days - 3 Months
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h4>Logo Design</h4>
+                        <p>Create unique and memorable logos that define brand identity and leave a lasting impression.</p>
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            15 Days - 3 Months
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h4>Video Editing</h4>
+                    <p>Transform raw footage into captivating videos with seamless editing, effects, and storytelling.</p>
+                    <div class="duration">
+                        <i class="far fa-clock"></i>
+                        15 Days - 3 Months
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Apply Button -->
+        <div class="text-center mt-4">
+            <a href="{% url 'apply_form' %}">
+                <button class="apply-now-btn">
+                    <span class="btn-content">
+                        <i class="fas fa-paper-plane me-2"></i>
+                        Apply for Internship
+                    </span>
+                    <span class="btn-shine"></span>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 2%;">
+                <div class="col-lg-8">
+                    <div class="contact-container animate__animated animate__fadeIn">
+                        <h2 class="contact-heading text-center">Get in Touch</h2>
+                        <form action="{% url 'contact_sub' %}" id="form" method="POST">
+
+                            {% csrf_token %}
+
+                            <!-- Replace with your Access Key -->
+                            <!-- <input type="hidden" name="access_key" value="074ee6ed-d056-41b2-aef9-bb4d76761d5d"> -->
+
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" name="Full_name" placeholder="Your Name" required>
+                                <label for="name"><i class="fas fa-user form-icon"></i>Full Name</label>
+                            </div>
+                            
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email" required>
+                                <label for="email"><i class="fas fa-envelope form-icon"></i>Email Address</label>
+                            </div>
+                            
+                            <div class="form-floating">
+                                <input type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                    name="Phone"
+                                    placeholder="Your Phone"
+                                    required
+                                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 43"
+                                    oninput="this.value = this.value.replace(/[^0-9+]/g, '')">
+                                <label for="phone"><i class="fas fa-phone form-icon"></i>Phone Number</label>
+                            </div>
+                            
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" name="message" required></textarea>
+                                <label for="message"><i class="fas fa-comment form-icon"></i>Your Message</label>
+                            </div>
+                            
+                            <button type="submit" class="contact-btn">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+    
+                        <div class="contact-info d-flex justify-content-between align-items-center">
+                            <div class="contact-info-item">
+                                <i class="fas fa-phone me-2"></i>
+                                <a href="tel:9514244236" class="contact-link" style="color: black;">9514244236</a>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:info@intraqsofttech.com" class="contact-link" style="color: black;">info@intraqsofttech.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-info">
+                            <img src="{% static 'img/black_logo_removebg.png' %}" alt="IntraQ software technology" title="IntraQ software technology" class="footer-logo mb-4">
+                            <p class="footer-description">Turning Vision into Reality with Technology. We provide innovative solutions for businesses to thrive in the digital era.</p>
+                            <form class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your email for Newsletter">
+                                    <button class="btn btn-subscribe" type="submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#internship">Internship</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Cloud Solutions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="footer-title mx-4" >Contact Us</h4>
+                        <div class="contact-inf">
+                            <div class="contact-info-item">
+                                <i class="fas fa-phone me-2"></i>
+                                <a href="tel:9514244236" class="contact-link">9514244236</a>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:info@intraqsofttech.com" class="contact-link">info@intraqsofttech.com</a>
+                            </div>
+                        </div>
+                        <div class="social-links" style="margin-top: 5px;">
+
+                            <a href="https://www.facebook.com/share/1BZZo951Ju/" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/9514244236" class="social-link whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/intraq-software-technology-015097351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/intraqsoftware_technology?igsh=MXFwbXVmZGh2ZDlsaw==" class="social-link instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">All rights reserved ©2025 IntraQ software technology.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and FontAwesome -->
+
+    <script>
+        function scrollToServices() {
+            const servicesSection = document.getElementById('services');
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+  <script>
+    
+
+
+window.onload = function() {
+    document.getElementById("form").reset();
+};
+function showSubCards(service) {
+    // Hide main service cards
+    document.querySelector(".main-cards-container").style.display = "none";
+
+    // Hide all sub-cards
+    document.querySelectorAll(".sub-cards-container").forEach(container => {
+        container.style.display = "none";
+    });
+
+    // Show the selected sub-cards container
+    document.getElementById(service + "-subcards").style.display = "block";
+
+    // Show the back button
+    document.querySelector(".back-btn").style.display = "block";
+}
+
+function showMainCards() {
+    // Show main service cards
+    document.querySelector(".main-cards-container").style.display = "block";
+
+    // Hide all sub-cards
+    document.querySelectorAll(".sub-cards-container").forEach(container => {
+        container.style.display = "none";
+    });
+
+    // Hide the back button
+    document.querySelector(".back-btn").style.display = "none";
+}
+
+
+
+function scrollToServices() {
+            const servicesSection = document.getElementById('services');
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.custom-navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Initialize Bootstrap collapse
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+
+            // Handle smooth scrolling and mobile menu collapse
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // If navbar is expanded on mobile, collapse it
+                    if (navbarCollapse.classList.contains('show')) {
+                        bsCollapse.hide();
+                    }
+
+                    // Smooth scroll to section
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        const targetSection = document.querySelector(targetId);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+
+            // Add active class to current nav item
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+
+
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        });
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+
+
+        function showSubCards(service) {
+            // Hide main cards container
+            document.querySelector('.main-cards-container').classList.add('hidden');
+            
+            // Hide all sub-cards containers
+            document.querySelectorAll('.sub-cards-container').forEach(container => {
+                container.classList.remove('active');
+            });
+            
+            // Show selected sub-cards container
+            document.getElementById(`${service}-subcards`).classList.add('active');
+            
+            // Show back button
+            document.querySelector('.back-btn').classList.add('active');
+        }
+
+        
+
+
+
+
+
+
+        document.querySelector('a[href="#internship"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('internshipPopup').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+});
+
+// Close popup when clicking X
+document.querySelector('.close-popup').addEventListener('click', function() {
+    document.getElementById('internshipPopup').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Enable scrolling
+});
+
+// Close popup when clicking outside
+document.getElementById('internshipPopup').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Show apply button when clicking card
+function showApplyButton(card) {
+    // Hide all other apply buttons first
+    document.querySelectorAll('.apply-btn').forEach(btn => {
+        btn.style.display = 'none';
+        btn.classList.remove('show');
+    });
+    
+    // Show and animate the clicked card's apply button
+    const applyBtn = card.querySelector('.apply-btn');
+    applyBtn.style.display = 'block';
+    setTimeout(() => applyBtn.classList.add('show'), 10);
+}
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Get the navbar collapse element
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                
+                // If navbar is expanded (shown), collapse it
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+
+                // Scroll to the section
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Keep the rest of your existing JavaScript code unchanged
+        const Observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        });
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        function showSubCards(service) {
+            document.querySelector('.main-cards-container').classList.add('hidden');
+            document.querySelectorAll('.sub-cards-container').forEach(container => {
+                container.classList.remove('active');
+            });
+            document.getElementById(`${service}-subcards`).classList.add('active');
+            document.querySelector('.back-btn').classList.add('active');
+        }
+
+        // Internship popup related code
+        document.querySelector('a[href="#internship"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('internshipPopup').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.getElementById('internshipPopup').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        document.getElementById('internshipPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        function showApplyButton(card) {
+            document.querySelectorAll('.apply-btn').forEach(btn => {
+                btn.style.display = 'none';
+                btn.classList.remove('show');
+            });
+            const applyBtn = card.querySelector('.apply-btn');
+            applyBtn.style.display = 'block';
+            setTimeout(() => applyBtn.classList.add('show'), 10);
+        }
+
+
+
+
+
+
+
+
+
+        window.addEventListener('scroll', reveal);
+
+function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+    
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            element.classList.add('active');
+        }
+    });
+}
+
+// Trigger initial reveal
+reveal();
+
+
+
+  
+  </script>
+  
+</body>
+</html>

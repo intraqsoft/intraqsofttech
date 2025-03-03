@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/cinfrim.css' %}">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1YGWYDENS0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1YGWYDENS0');
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <!-- Application Form -->
+                <div class="form-container" id="applicationForm">
+                    <div class="form-header">
+                        <h2>Internship Joining Form</h2>
+                        <p class="text-muted">Fill out the form below to apply for an internship</p>
+                    </div>
+                    
+                    <form id="internshipForm" novalidate>
+                        <!-- Personal Information -->
+                        <div class="mb-4">
+                            <h4>Personal Information</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label required">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="error-message" id="nameError">Please enter your full name</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label required">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label required">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" maxlength="10" required>
+                                    <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="passportPhoto" class="form-label required">Passport Size Photo</label>
+                                    <input type="file" class="form-control" id="passportPhoto" accept="image/*" required>
+                                    <div class="preview-container" id="photoPreviewContainer">
+                                        <img id="photoPreview" class="preview-image d-none" alt="Photo preview">
+                                    </div>
+                                    <div class="error-message" id="photoError">Please upload a passport size photo</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Educational Information -->
+                        <div class="mb-4">
+                            <h4>Educational Information</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="college" class="form-label required">College Name</label>
+                                    <input type="text" class="form-control" id="college" required>
+                                    <div class="error-message" id="collegeError">Please enter your college name</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="department" class="form-label required">Department Name</label>
+                                    <input type="text" class="form-control" id="department" required>
+                                    <div class="error-message" id="departmentError">Please enter your department name</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Internship Details -->
+                        <div class="mb-4">
+                            <h4>Internship Details</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="domain" class="form-label required">Domain</label>
+                                    <select class="form-select" id="domain" required>
+                                        <option value="" selected disabled>Select a domain</option>
+                                        <option value="Frontend">Frontend Development</option>
+                                        <option value="Fullstack">Fullstack Development</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Mobile App">Mobile App Development</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="UI/UX">UI/UX Design</option>
+                                        <option value="Data Analyst">Data Analyst</option>
+                                        <option value="Data Science">Data Science</option>
+                                        <option value="Machine Learning">Machine Learning</option>
+                                        <option value="HR/BDE">HR/BDE</option>
+                                    </select>
+                                    <div class="error-message" id="domainError">Please select a domain</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="duration" class="form-label required">Duration</label>
+                                    <select class="form-select" id="duration" required>
+                                        <option value="" selected disabled>Select duration</option>
+                                        <option value="15">15 Days</option>
+                                        <option value="30">1 Month</option>
+                                        <option value="60">2 Months</option>
+                                        <option value="90">3 Months</option>
+                                        <option value="180">6 Months</option>
+                                    </select>
+                                    <div class="error-message" id="durationError">Please select a duration</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="startDate" class="form-label required">Start Date</label>
+                                    <input type="date" class="form-control" id="startDate" required>
+                                    <div class="error-message" id="startDateError">Please select a start date</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="endDate" class="form-label">End Date</label>
+                                    <input type="date" class="form-control" id="endDate" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Documents & Verification -->
+                        <div class="mb-4">
+                            <h4>Documents & Verification</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="paymentScreenshot" class="form-label required">Payment Screenshot</label>
+                                    <input type="file" class="form-control" id="paymentScreenshot" accept="image/*" required>
+                                    <div class="preview-container" id="paymentPreviewContainer">
+                                        <img id="paymentPreview" class="preview-image d-none" alt="Payment preview">
+                                    </div>
+                                    <div class="error-message" id="paymentError">Please upload payment screenshot</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="aadharCard" class="form-label required">Aadhaar Card Image</label>
+                                    <input type="file" class="form-control" id="aadharCard" accept="image/*" required>
+                                    <div class="preview-container" id="aadharPreviewContainer">
+                                        <img id="aadharPreview" class="preview-image d-none" alt="Aadhaar preview">
+                                    </div>
+                                    <div class="error-message" id="aadharError">Please upload Aadhaar card image</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Terms & Submit -->
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termsAgreement" required>
+                                <label class="form-check-label" for="termsAgreement">
+                                    I agree to the terms and conditions
+                                </label>
+                                <div class="error-message" id="termsError">You must agree to the terms and conditions</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-submit">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Result Container (Initially Hidden) -->
+                <div class="result-container" id="resultContainer">
+                    <h3>Application Submitted Successfully</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Full Name:</div>
+                                <div class="result-value" id="resultName"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Email Address:</div>
+                                <div class="result-value" id="resultEmail"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Phone Number:</div>
+                                <div class="result-value" id="resultPhone"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">College Name:</div>
+                                <div class="result-value" id="resultCollege"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Department:</div>
+                                <div class="result-value" id="resultDepartment"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Domain:</div>
+                                <div class="result-value" id="resultDomain"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Duration:</div>
+                                <div class="result-value" id="resultDuration"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">Start Date:</div>
+                                <div class="result-value" id="resultStartDate"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result-item">
+                                <div class="result-label">End Date:</div>
+                                <div class="result-value" id="resultEndDate"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="mt-4 mb-3">Uploaded Documents</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="result-label">Passport Photo:</div>
+                                    <img id="resultPhoto" class="result-image" alt="Passport Photo">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="result-label">Payment Screenshot:</div>
+                                    <img id="resultPayment" class="result-image" alt="Payment Screenshot">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="result-label">Aadhaar Card:</div>
+                                    <img id="resultAadhar" class="result-image" alt="Aadhaar Card">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn btn-secondary btn-new-application" id="newApplicationBtn">Submit New Application</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/confrim.js' %}"></script>
+</body>
+</html>

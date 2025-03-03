@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntraQ Software Technology | Internship Application Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1YGWYDENS0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1YGWYDENS0');
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h1>Internship Application</h1>
+                        <p>Fill out the form below to apply for an internship position</p>
+                    </div>
+                    
+                    <form method="post" accept="{% url 'apply_form' %}" id="internshipForm">
+                        {% csrf_token %}
+                        <div class="form-step active" id="step1">
+                            <h4 class="mb-4 text-center">Personal Information</h4>
+                            
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                                <div class="invalid-feedback">Please enter a valid email address</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Enter your 10-digit phone number" maxlength="10" required>
+                                <div class="invalid-feedback">Please enter a valid 10-digit phone number</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="college" class="form-label">College/University Name <span class="text-danger">*</span></label>
+                                <input type="text" name="college" class="form-control" id="college" placeholder="Enter your college/university name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="department" class="form-label">Department <span class="text-danger">*</span></label>
+                                <input type="text" name="depart" class="form-control" id="department" placeholder="Enter your department" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="passYear" class="form-label">Year of Passing Out <span class="text-danger">*</span></label>
+                                <input type="number" name="year" class="form-select" id="passYear" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Domain <span class="text-danger">*</span></label>
+                                <div class="domain-options">
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="frontend" value="Frontend Development" required>
+                                        <label for="frontend">
+                                            <i class="fas fa-laptop-code"></i>
+                                            Frontend
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="fullstack" value="Full Stack Development">
+                                        <label for="fullstack">
+                                            <i class="fas fa-server"></i>
+                                            Full Stack
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="digitalmarketing" value="Digital Marketing">
+                                        <label for="digitalmarketing">
+                                            <i class="fas fa-bullhorn"></i>
+                                            Digital Marketing
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="mobileapp" value="Mobile App Development">
+                                        <label for="mobileapp">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            Mobile App
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="graphicdesign" value="Graphic Design">
+                                        <label for="graphicdesign">
+                                            <i class="fas fa-palette"></i>
+                                            Graphic Design
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="uiux" value="UI/UX Design">
+                                        <label for="uiux">
+                                            <i class="fas fa-pencil-ruler"></i>
+                                            UI/UX
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="dataanalyst" value="Data Analyst">
+                                        <label for="dataanalyst">
+                                            <i class="fas fa-chart-bar"></i>
+                                            Data Analyst
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="datascience" value="Data Science">
+                                        <label for="datascience">
+                                            <i class="fas fa-chart-line"></i>
+                                            Data Science
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="machinelearning" value="Machine Learning">
+                                        <label for="machinelearning">
+                                            <i class="fas fa-robot"></i>
+                                            Machine Learning
+                                        </label>
+                                    </div>
+                                    <div class="domain-option">
+                                        <input type="radio" name="domain" id="hrbde" value="HR/BDE">
+                                        <label for="hrbde">
+                                            <i class="fas fa-users"></i>
+                                            HR/BDE
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 mt-4">
+                                <label class="form-label">Duration <span class="text-danger">*</span></label>
+                                <div class="duration-options">
+                                    <div class="duration-option">
+                                        <input type="radio" name="duration" id="15days" value="15 Days" required>
+                                        <label for="15days">15 Days</label>
+                                    </div>
+                                    <div class="duration-option">
+                                        <input type="radio" name="duration" id="1month" value="1 Month">
+                                        <label for="1month">1 Month</label>
+                                    </div>
+                                    <div class="duration-option">
+                                        <input type="radio" name="duration" id="2months" value="2 Months">
+                                        <label for="2months">2 Months</label>
+                                    </div>
+                                    <div class="duration-option">
+                                        <input type="radio" name="duration" id="3months" value="3 Months">
+                                        <label for="3months">3 Months</label>
+                                    </div>
+                                    <div class="duration-option">
+                                        <input type="radio" name="duration" id="6months" value="6 Months">
+                                        <label for="6months">6 Months</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-end mt-4">
+                                <button type="submit" class="btn btn-primary next-step">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <i class="fas fa-check-circle success-icon"></i>
+                        <h2>Application Submitted!</h2>
+                        <p class="mb-4">Thank you for applying. We'll review your application and contact you soon.</p>
+                        <div id="applicationSummary" class="text-start bg-light p-4 rounded mb-4">
+                            <!-- Summary will be filled by JavaScript -->
+                        </div>
+                        <div class="action-buttons">
+                            <button type="button" class="btn btn-primary" id="newApplicationBtn">Submit Another Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="{% static 'js/form.js' %}"></script> -->
+</body>
+</html>
