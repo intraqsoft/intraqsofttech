@@ -84,23 +84,23 @@ WSGI_APPLICATION = 'intraq.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "defaultdb",
-        "USER": "avnadmin",
-        "PASSWORD": os.environ.get("PWD"),
-        "HOST": "mysql-3057c030-intraqsoftwaretech-6e71.l.aivencloud.com",
-        "PORT": "25110",
-    }
-}
-
 # DATABASES = {
 #     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": "mydatabase",
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "defaultdb",
+#         "USER": "avnadmin",
+#         "PASSWORD": os.environ.get("PWD"),
+#         "HOST": "mysql-3057c030-intraqsoftwaretech-6e71.l.aivencloud.com",
+#         "PORT": "25110",
 #     }
 # }
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
